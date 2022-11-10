@@ -11,3 +11,7 @@ configMapGenerator:
       - kibana-dashboard-pd.ndjson
       - kibana-dashboard-pf-threat.ndjson
       - kibana-dashboard-pf.ndjson
+
+generatorOptions:
+ annotations:
+   argocd.argoproj.io/sync-options: Replace=true
